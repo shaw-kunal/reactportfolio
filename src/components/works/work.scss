@@ -1,0 +1,124 @@
+ @import "../../global.scss";
+
+ .work {
+     background-color: crimson;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+
+     .arrow {
+         position: absolute;
+         width: 70px;
+         cursor: pointer;
+
+         &.left {
+             transform: rotate(180deg);
+             left: 100px;
+         }
+
+         &.right {
+             right: 100px;
+         }
+
+     }
+
+     .slider {
+         height: 350px;
+         // background-color: aliceblue;
+         display: flex;
+         position: absolute;
+         left: 0px;
+         transition: all 1s ease;
+
+         .container {
+             width: 100vw;
+             // height: inherit;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+
+             .item {
+                 width: 700px;
+                 height: 100%;
+                 background-color: white;
+                 border-radius: 20px;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 overflow: hidden;
+
+
+                 .left {
+                     flex: 4;
+                     height: 80%;
+                     // background-color: aqua;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     padding-left: 20px;
+
+
+                     .leftContainer {
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: space-between;
+                         gap: 20px;
+
+
+                         .imgContainer {
+                             width: 40px;
+                             height: 40px;
+                             border-radius: 50%;
+                             background-color: rgb(245, 154, 121);
+                             display: flex;
+                             align-items: center;
+                             justify-content: center;
+
+                             img {
+                                 width: 25px;
+                             }
+                         }
+
+                         h2 {
+                             font-size: 20px;
+                         }
+
+                         p {
+                             font-size: 15px;
+                         }
+
+                         span {
+                             cursor: pointer;
+                             text-decoration: underline;
+                             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                             color: $mainColor;
+                         }
+
+
+
+                     }
+
+
+                 }
+
+                 .right {
+                     flex: 8;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     overflow: hidden;
+
+
+                     img {
+                         width: 400px;
+                         transform: rotate(-8deg);
+                     }
+                 }
+
+             }
+
+         }
+     }
+
+ }

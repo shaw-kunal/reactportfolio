@@ -1,0 +1,68 @@
+@import  "../../global.scss";
+.portfolio{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: hidden;
+    h1{
+        font-size: 30px;
+    }
+        ul{
+            margin: 10px;
+            padding: 0;
+            display: flex;
+            gap:10px;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+        .container{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap:10px;
+
+            .item{
+                display: flex;
+                flex-direction: column;
+                border-radius: 10px;
+                margin:10px 10px;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                position: relative;
+                overflow: hidden;
+                img{
+                    transition: all 2s ease;
+                    width:300px;
+                    z-index: 1;
+        
+                }
+                h3{
+                    position: absolute;
+                    bottom: 10px;
+                }
+                &:hover{
+                    img{
+                        filter: brightness(1.5);  
+                        transform: scale(1.2);
+                    
+                    }
+                    
+                    h3{
+                        z-index: 1;
+                        color: $mainColor;
+                        font-family: 'Courier New', Courier, monospace;
+                        
+                    }
+                }
+
+            }
+        }
+
+    
+    
+}
